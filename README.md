@@ -228,7 +228,9 @@ const makers = [
 ];
 ```
 
-The uuid in the ```publisher``` field can be found on the Microsoft website that you use to create the app listing.
+The uuid in the ```publisher``` field can be found on the Microsoft website that you use to create the app listing. The only trick is that Windows doesn't like dashes in any file or folder name.
+
+## package.json
 
 Inside your ```package.json``` you might need to add a ```productName``` field. Here are some of the fields I have added, beyond what is already in the standard file.
 
