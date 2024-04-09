@@ -139,7 +139,9 @@ const osxNotarize = {
 ```
 
 ```appleId```: usually the email address you used to create your Apple account.
+
 ```appleIdPassword```: a one-time password you can create. This is mentioned in the documentation. You create it via the Apple Developer website or something like that.
+
 ```teamId```: that set of characters inside the brackets at the end of your identity name.
 
 ## Other Packager Configuration
