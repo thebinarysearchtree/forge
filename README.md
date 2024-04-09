@@ -2,7 +2,7 @@
 
 There is very little documentation related to submitting an Electron app to the Mac App Store using Electron Forge. Many of the errors along the way are cryptic, and the documentation is often missing. I am writing this guide to change that.
 
-## Install Electron Forge
+## Basic Configuration
 
 Follow the documentation on how add Electron Forge to your project. This is fairly straight-forward, so I won't go into it.
 
@@ -26,7 +26,7 @@ At some point, you need to sign up for an Apple Developer Account and create an 
 
 ```icon```: You can find templates online that provide the right dimensions for the Mac app icon. You need to create rounded corners and provide some space around the icon.
 
-## Signing the app
+## Signing Configuration
 
 If you want to submit your app to the Mac App Store, you will need to create the following certificates:
 
@@ -145,7 +145,7 @@ const osxNotarize = {
 ```appleIdPassword```: a one-time password you can create. This is mentioned in the documentation. You create it via the Apple Developer website or something like that.
 ```teamId```: that set of characters inside the brackets at the end of your identity name.
 
-## Other package configuration properties
+## Other Packager Configuration
 
 ```js
 const other = {
@@ -169,7 +169,7 @@ const other = {
 
 ```appCategoryType```: The category that is appropriate for your application.
 
-## Other configuration
+## Other Configuration
 
 After the packager configuration, there is the ```maker``` configuration and some types of configuration that you can just leave as they are unless you have a use for them.
 
@@ -244,6 +244,8 @@ Inside your ```package.json``` you might need to add a ```productName``` field. 
 ```
 
 ```npm run mac``` will create a ```dmg``` file for distribution outside of the app store, and ```npm run mas``` will create a ```pkg``` file for distribution inside the app store, assuming you have used the appropriate forge configuration.
+
+## Testing and Submission
 
 To test your application before submitting it to the app store, you need to make sure you are actually running inside an app store sandbox, and not just running like a normal mac application.
 
