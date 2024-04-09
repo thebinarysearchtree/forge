@@ -74,9 +74,12 @@ const osxSign = {
 ```binaries```: if your electron app calls any binaries, they need to be listed here so that they can be signed.
 
 ```identity```: the name of the certificate.
+
+```
 app store development: Apple Development
 app store distribution: Apple Distribution: FirstName LastName (TEAMID)
 outside distribution: Developer ID Application: FirstName LastName (TEAMID)
+```
 
 ```platform```: for the app store it is ```mas``` and for outside the app store it is ```darwin```
 
@@ -230,7 +233,7 @@ const makers = [
 
 The uuid in the ```publisher``` field can be found on the Microsoft website that you use to create the app listing. The only trick is that Windows doesn't like dashes in any file or folder name.
 
-## NPM Configuration
+## Package Configuration
 
 Inside your ```package.json``` you might need to add a ```productName``` field. Here are some of the fields I have added, beyond what is already in the standard file.
 
