@@ -234,7 +234,7 @@ Inside your ```package.json``` you might need to add a ```productName``` field. 
 
 ```json
 {
-  "productName": "Quietone",
+  "productName": "AppName",
   "scripts": {
     "build": "./node_modules/.bin/esbuild main.js --bundle --platform=node --format=cjs --packages=external --outfile=bundle.js",
     "mac": "npm run make -- --arch=universal --platform=darwin",
