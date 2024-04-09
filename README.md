@@ -1,4 +1,4 @@
-# Mac App Store Submission Guide using Electron Forge
+# Electron Forge and the Mac App Store
 
 There is very little documentation related to submitting an Electron app to the Mac App Store using Electron Forge. Many of the errors along the way are cryptic, and the documentation is often missing. I am writing this guide to change that.
 
