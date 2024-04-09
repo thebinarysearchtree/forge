@@ -243,7 +243,7 @@ Inside your ```package.json``` you might need to add a ```productName``` field. 
 }
 ```
 
-```npm run mac``` will create a ```dmg``` file for distribution outside of the app store, and ```npm run mas``` will create a ```pkg``` file for distribution inside the app store, assuming you have used the appropriate forge configuration.
+```npm run mac``` will create a ```dmg``` file for distribution outside of the app store, and ```npm run mas``` will create a ```pkg``` file for distribution inside the app store, assuming you have used the appropriate forge configuration. For testing, you don't need to use any of the ```makers``` so you can just use ```npm run package```.
 
 ## Testing and Submission
 
