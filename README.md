@@ -30,18 +30,14 @@ At some point, you need to sign up for an Apple Developer Account and create an 
 
 If you want to submit your app to the Mac App Store, you will need to create the following certificates:
 
-```
-Apple Development
-Apple Distribution
-Mac Installer Distribution
-```
+- Apple Development
+- Apple Distribution
+- Mac Installer Distribution
 
 If you want to distribution your app outside of the App Store, you will need the following certificates:
 
-```
-Developer ID Application
-Developer ID Installer
-```
+- Developer ID Application
+- Developer ID Installer
 
 All of these certificates should be created through xcode after you have signed up for an Apple Developer Account. If you have created them any other way, you will have to delete them.
 
@@ -75,11 +71,9 @@ const osxSign = {
 
 ```identity```: the name of the certificate.
 
-```
-App store development: Apple Development
-App store distribution: Apple Distribution: FirstName LastName (TEAMID)
-Outside distribution: Developer ID Application: FirstName LastName (TEAMID)
-```
+- App store development: Apple Development
+- App store distribution: Apple Distribution: FirstName LastName (TEAMID)
+- Outside distribution: Developer ID Application: FirstName LastName (TEAMID)
 
 ```platform```: for the app store it is ```mas``` and for outside the app store it is ```darwin```
 
