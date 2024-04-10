@@ -195,7 +195,7 @@ const makers = [
 ];
 ```
 
-For distribution outside of the app store, you should create a dmg file using this configuration:
+For distribution outside of the app store, you should create a ```dmg``` file using this configuration:
 
 ```js
 const makers = [
