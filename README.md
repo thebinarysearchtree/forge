@@ -125,14 +125,14 @@ Here is an example child entitlements file.
 
 Forge will add additional keys related to your provisioning profile.
 
-For distribution outside of the app store, you will need to add ```osxNotarize``` to the package config section.
+For distribution outside of the app store, you will need to add ```osxNotarize``` to the packager config section.
 
 ```js
 const osxNotarize = {
-      tool: 'notarytool',
-      appleId: process.env.APPLE_ID,
-      appleIdPassword: process.env.APPLE_ID_PASSWORD,
-      teamId: process.env.TEAM_ID
+  tool: 'notarytool',
+  appleId: process.env.APPLE_ID,
+  appleIdPassword: process.env.APPLE_ID_PASSWORD,
+  teamId: process.env.TEAM_ID
 }
 ```
 
