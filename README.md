@@ -4,7 +4,7 @@ There is very little documentation related to submitting an Electron app to the 
 
 ## Basic Configuration
 
-Follow the documentation on how add Electron Forge to your project. This is fairly straight-forward, so I won't go into it.
+Follow the documentation on how to add Electron Forge to your project. This is fairly straight-forward, so I won't go into it.
 
 Once this is done, a ```forge.config.js``` file will be in your project's root folder. You can convert this to ESM syntax if you want, but if you are creating a universal application, your project will have to be converted back into CJS for the final publishing step as this part of the Electron Forge toolchain does not yet support ESM.
 
@@ -17,8 +17,6 @@ Once this is done, a ```forge.config.js``` file will be in your project's root f
     icon: './app'
  }
  ```
-
-At some point, you need to sign up for an Apple Developer Account and create an app.
 
 ```appBundleId```: At some point, you need to sign up for an Apple Developer Account and create an app. This is where you create a bundle Id that you then provide to Forge in this field.
 
