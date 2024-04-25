@@ -123,7 +123,7 @@ Here is an example child entitlements file.
 </plist>
 ```
 
-Forge will add additional keys related to your provisioning profile.
+Forge will add additional keys related to your provisioning profile. You should remove the ```app-sandbox``` key in both files when creating the set of entitlements you want to use outside of the app store, as that version does not run in a sandbox.
 
 For distribution outside of the app store, you will need to add ```osxNotarize``` to the packager config section.
 
